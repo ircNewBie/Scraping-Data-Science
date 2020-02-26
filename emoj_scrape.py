@@ -29,7 +29,7 @@ def get_data(url_source):
 import pandas as pd
 
 #convert dictionary to dataframe
-data = emoj_dict
+data = get_data(url)
 df = pd.DataFrame(list(data.items()), columns=['Emoj Code', 'Emoj Name'])
 df.to_csv (r'D:\kingsoft\emoj_dataframe.csv', index = None, header=True) #Don't forget to add '.csv' at the end of the path
 
